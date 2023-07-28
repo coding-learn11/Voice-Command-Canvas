@@ -41,7 +41,7 @@ recognition.onresult = function(event) {
     }
     else
     {
-      document.getElementById("status").innerHTML = "The speech has not recognized a number "; 
+      document.getElementById("status").innerHTML = "The speech has not been recognized as a number "; 
     }
 
 }
