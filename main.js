@@ -32,6 +32,7 @@ recognition.onresult = function(event) {
  content = event.results[0][0].transcript;
 
     document.getElementById("status").innerHTML = "The speech has been recognized: " + content; 
+    console.log("recognized");
     to_number = Number(content);
     if(Number.isInteger(to_number))
     {
