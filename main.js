@@ -32,7 +32,8 @@ recognition.onresult = function(event) {
  content = event.results[0][0].transcript;
 
     document.getElementById("status").innerHTML = "The speech has been recognized: " + content; 
-    console.log("recognized");
+
+    console.log('recognized');
     to_number = Number(content);
     if(Number.isInteger(to_number))
     {
@@ -41,7 +42,7 @@ recognition.onresult = function(event) {
     }
     else
     {
-      document.getElementById("status").innerHTML = "The speech has not been recognized as a number "; 
+      document.getElementById("status").innerHTML = "The speech has not recognized a number "; 
     }
 
 }
